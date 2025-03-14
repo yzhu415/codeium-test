@@ -9,41 +9,53 @@
 <body>
     <header>
         <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+            <a href="#home" data-i18n="nav_home">Home</a>
+            <a href="#about" data-i18n="nav_about">About</a>
+            <a href="#projects" data-i18n="nav_projects">Projects</a>
+            <a href="#contact" data-i18n="nav_contact">Connect</a>
         </nav>
+        <div class="language-switcher">
+            <button class="lang-btn" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="fr">FR</button>
+            <button class="lang-btn" data-lang="zh">中文</button>
+        </div>
     </header>
 
     <main>
         <section id="home" class="hero">
-            <h1>Yifan Zhu</h1>
-            <p>Director of Product Strategy & Operations</p>
-            <div class="contact-info">
-                <p><a href="mailto:yzhu415@gmail.com">yzhu415@gmail.com</a> | 516-506-8056</p>
+            <div class="profile-container">
+                <div class="profile-image">
+                    <img src="images/profile.jpg" alt="Yifan Zhu">
+                </div>
+                <div class="profile-content">
+                    <h1>Yifan Zhu</h1>
+                    <p data-i18n="title">Director of Product Strategy & Operations</p>
+                    <div class="contact-info">
+                        <p><a href="mailto:yzhu415@gmail.com">yzhu415@gmail.com</a> | 516-506-8056</p>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section id="about">
-            <h2>About Me</h2>
-            <p>For the past decade, I have worked at some of the most recognized consumer and enterprise software companies where I've both launched new ideas generating $XXM+ in ARR and scaled existing programs globally from $XXXM to $XXXM. At work, I am often brought in to develop emerging opportunities and as a fixer for issues with no clear owner.</p>
+            <h2 data-i18n="about_title">About Me</h2>
+            <p data-i18n="about_text">For the past decade, I have worked at some of the most recognized consumer and enterprise software companies where I've both launched new ideas generating $XXM+ in ARR and scaled existing programs globally from $XXXM to $XXXM. At work, I am often brought in to develop emerging opportunities and as a fixer for issues with no clear owner.</p>
         </section>
 
         <section id="projects">
-            <h2>My Projects</h2>
+            <h2 data-i18n="projects_title">My Projects</h2>
             <div class="project-grid">
                 <div class="project-card">
-                    <h3>Project Codeium</h3>
-                    <p>Built a personal website in under 1 hour with no prior coding experience.</p>
-                    <p class="technologies">Technologies: Codeium, VS Code, GitHub</p>
+                    <h3 data-i18n="project_codeium_title">Project Codeium</h3>
+                    <p data-i18n="project_codeium_desc">Built a personal website in under 1 hour with no prior coding experience.</p>
+                    <p class="technologies" data-i18n="project_codeium_tech">Technologies: Codeium, VS Code, GitHub</p>
                     <a href="https://yzhu415.github.io/codeium-test" target="_blank">View Project</a>
                 </div>
             </div>
         </section>
 
         <section id="contact">
-            <h2>Connect With Me</h2>
+            <h2 data-i18n="contact_title">Connect With Me</h2>
             <div class="contact-links">
                 <a href="https://www.linkedin.com/in/yztwo/" target="_blank">LinkedIn</a>
                 <a href="https://github.com/yzhu415" target="_blank">GitHub</a>
@@ -52,9 +64,10 @@
     </main>
 
     <footer>
-        <p> 2025 Yifan Zhu. All rights reserved.</p>
+        <p data-i18n="footer_text"> 2025 Yifan Zhu. All rights reserved.</p>
     </footer>
 
+    <script src="translations.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

@@ -2,160 +2,133 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yifan Zhu - Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>KB Staging</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="#home" data-i18n="nav_home">Home</a>
-            <a href="#about" data-i18n="nav_about">About</a>
-            <a href="#projects" data-i18n="nav_projects">Projects</a>
-            <a href="#contact" data-i18n="nav_contact">Connect</a>
-        </nav>
-        <div class="language-switcher">
-            <button class="lang-btn" data-lang="en">EN</button>
-            <button class="lang-btn" data-lang="fr">FR</button>
-            <button class="lang-btn" data-lang="zh">中文</button>
+    <nav>
+        <div class="logo">KB Staging</div>
+        <button class="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+        <div class="nav-links">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#projects">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>KB Staging</h1>
+            <p>Transforming Houses into Timeless Homes</p>
         </div>
     </header>
 
-    <main>
-        <section id="home" class="hero">
-            <div class="profile-container">
-                <div class="profile-image">
-                    <img src="images/profile.jpg" alt="Yifan Zhu">
+    <section id="services" class="services">
+        <h2>Transform Your Property</h2>
+        <div class="service-grid">
+            <div class="service-item">
+                <p>KB Staging has been a trusted name in the San Francisco Bay Area's home staging industry for over 20 years, transforming properties into captivating homes that resonate with potential buyers. Our philosophy centers on the belief that every space has a unique story, and we bring that narrative to life with artful décor and design, inspiring buyers to envision their future in each property. By showcasing homes in their best light, our staging services not only enhance visual appeal but also significantly increase marketability, leading to faster sales and higher returns for homeowners and realtors alike. Let us help you unlock your property's full potential and make a lasting impression in today's competitive market.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section id="projects" class="featured-projects">
+        <h2>Featured Projects</h2>
+        
+        <div class="featured-grid">
+            <!-- Hillsborough Classic -->
+            <div class="project-row">
+                <div class="project-image">
+                    <img src="images/hillsborough-classic.jpg" alt="Hillsborough Classic - Elegant traditional home with modern touches">
                 </div>
-                <div class="profile-content">
-                    <h1>Yifan Zhu</h1>
-                    <p data-i18n="title">Director of Product Strategy & Operations</p>
-                    <div class="contact-info">
-                        <p><a href="mailto:yzhu415@gmail.com">yzhu415@gmail.com</a> | 516-506-8056</p>
-                    </div>
-                    <button class="cta-button" data-i18n="hire_me" title="Let's work together!">Hire Me</button>
+                <div class="project-content">
+                    <h3>Hillsborough Classic</h3>
+                    <a href="#" class="view-project">View Project</a>
                 </div>
             </div>
-        </section>
 
-        <section id="about" class="about">
-            <h2 data-i18n="about_title">About Me</h2>
-            <p data-i18n="about_text">For the past decade, I have worked at some of the most recognized consumer and enterprise software companies where I've both launched new ideas generating $XXM+ in ARR and scaled existing programs globally from $XXXM to $XXXM. At work, I am often brought in to develop emerging opportunities and as a fixer for issues with no clear owner.</p>
-            <div class="company-logos">
-                <div class="logo-grid">
-                    <a href="https://www.roku.com" target="_blank" class="logo-item">
-                        <i class="fab fa-roku fa-3x"></i>
-                        <span>Roku</span>
-                    </a>
-                    <a href="https://www.amazon.com" target="_blank" class="logo-item">
-                        <i class="fab fa-amazon fa-3x"></i>
-                        <span>Amazon</span>
-                    </a>
-                    <a href="https://www.brightcove.com" target="_blank" class="logo-item">
-                        <i class="fas fa-play-circle fa-3x"></i>
-                        <span>Brightcove</span>
-                    </a>
-                    <a href="https://www.atlassian.com" target="_blank" class="logo-item">
-                        <i class="fab fa-atlassian fa-3x"></i>
-                        <span>Atlassian</span>
-                    </a>
+            <!-- Palo Alto Mid-Century -->
+            <div class="project-row">
+                <div class="project-image">
+                    <img src="images/palo-alto-living.jpg" alt="Palo Alto Mid-Century - Modern living room with floor-to-ceiling built-in shelving">
+                </div>
+                <div class="project-content">
+                    <h3>Palo Alto Mid-Century</h3>
+                    <a href="#" class="view-project">View Project</a>
                 </div>
             </div>
-        </section>
-
-        <section id="projects">
-            <h2 data-i18n="projects_title">My Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <h3 data-i18n="project_codeium_title">Personal Website</h3>
-                    <p data-i18n="project_codeium_desc">Built a personal website in under 1 hour with no prior coding experience.</p>
-                    <div class="technologies" data-i18n="project_codeium_tech">Technologies: Windsurf IDE, Cascade AI, GitHub</div>
+            
+            <!-- City Modern -->
+            <div class="project-row">
+                <div class="project-image">
+                    <img src="images/city-modern.jpg" alt="City Modern - Contemporary urban residence with sleek finishes">
                 </div>
-
-                <div class="project-card">
-                    <h3>New Vertical Expansion</h3>
-                    <p>Expanded display ad solutions from Media & Entertainment advertisers (e.g. Disney) to Brand advertisers (e.g. Toyota). Adjusted GTM strategy for new buyer personas and their performance goals.</p>
-                </div>
-                
-                <div class="project-card">
-                    <h3>Voice of the Customer</h3>
-                    <p>Provided in-market GTM support by serving as product expert in pitches and strategic partnership sessions. Successfully championed greater investment in internal tools based on customer feedback to reduce SLAs.</p>
-                </div>
-                
-                <div class="project-card">
-                    <h3>Bias for Action</h3>
-                    <p>Discovered a feature gap in product UX that was causing under-penetration with a key customer segment, resulting in loss of $XXM opportunity. Presented case to multiple executives across business lines to get prioritization buy-in.</p>
+                <div class="project-content">
+                    <h3>City Modern</h3>
+                    <a href="#" class="view-project">View Project</a>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="contact">
-            <h2 data-i18n="contact_title">Connect With Me</h2>
-            <div class="contact-links">
-                <a href="https://www.linkedin.com/in/yztwo/" target="_blank">LinkedIn</a>
-                <a href="https://github.com/yzhu415" target="_blank">GitHub</a>
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p class="section-subtitle">Call, email, or complete the inquiry form and a member of our team will be in touch soon.</p>
+        <div class="contact-content">
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <input type="text" name="name" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            <div id="success-message" class="form-message success" style="display: none;">
+                Message sent successfully! We'll get back to you soon.
             </div>
-        </section>
-    </main>
+            <div id="error-message" class="form-message error" style="display: none;">
+                Sorry, there was an error sending your message. Please try again.
+            </div>
+        </div>
+    </section>
 
     <footer>
-        <p data-i18n="footer_text"> 2025 Yifan Zhu. All rights reserved.</p>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>KB Staging</h3>
+                <p>Transforming spaces into stunning homes.</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="#projects">Portfolio</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
     </footer>
 
-    <!-- Contact Form Modal -->
-    <div id="contactModal" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2 data-i18n="contact_form_title">Let's Connect</h2>
-                <button class="close-button" data-i18n="contact_close">Close</button>
-            </div>
-            <form id="contactForm" class="contact-form">
-                <div class="form-group">
-                    <label for="name" data-i18n="contact_name">Name</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="company" data-i18n="contact_company">Company</label>
-                    <input type="text" id="company" name="company" required>
-                </div>
-                <div class="form-group">
-                    <label for="email" data-i18n="contact_email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message" data-i18n="contact_message">Message</label>
-                    <textarea id="message" name="message" rows="5" data-i18n-placeholder="contact_message_placeholder" required></textarea>
-                </div>
-                <button type="submit" class="submit-button" data-i18n="contact_submit">Send Message</button>
-            </form>
-        </div>
-    </div>
-
-    <div class="chat-widget">
-        <button class="chat-widget-button">
-            <i class="fas fa-comment"></i>
-        </button>
-        <div class="chat-box">
-            <div class="chat-header">
-                <h3>Send me a message</h3>
-                <button class="close-chat">×</button>
-            </div>
-            <div class="chat-body">
-                <form id="messageForm">
-                    <input type="text" id="name" placeholder="Your name" required>
-                    <input type="email" id="email" placeholder="Your email" required>
-                    <textarea id="message" placeholder="Your message" required></textarea>
-                    <button type="submit">
-                        <i class="fas fa-paper-plane"></i> Send
-                    </button>
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <script src="translations.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/mobile-menu.js"></script>
     <script src="script.js"></script>
-    <script src="chat.js"></script>
 </body>
 </html>

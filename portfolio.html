@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - KB Staging</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <span class="logo-text">KB</span>
+            <span class="logo-text-small">Staging</span>
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Our Portfolio</h1>
+            <p>Transforming Spaces Into Timeless Homes</p>
+        </div>
+    </header>
+
+    <section id="portfolio" class="portfolio">
+        <div class="portfolio-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="living-room">Living Rooms</button>
+            <button class="filter-btn" data-filter="bedroom">Bedrooms</button>
+            <button class="filter-btn" data-filter="kitchen">Kitchens</button>
+            <button class="filter-btn" data-filter="luxury">Luxury Estates</button>
+        </div>
+        
+        <div class="portfolio-grid">
+            <div class="portfolio-item" data-category="living luxury">
+                <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Hillsborough Classic">
+                <div class="portfolio-overlay">
+                    <h3>Hillsborough Classic</h3>
+                    <a href="#" class="view-project">View Project</a>
+                </div>
+            </div>
+            
+            <div class="portfolio-item" data-category="bedroom">
+                <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Palo Alto Mid-Century">
+                <div class="portfolio-overlay">
+                    <h3>Palo Alto Mid-Century</h3>
+                    <a href="#" class="view-project">View Project</a>
+                </div>
+            </div>
+            
+            <div class="portfolio-item" data-category="kitchen">
+                <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="City Modern">
+                <div class="portfolio-overlay">
+                    <h3>City Modern</h3>
+                    <a href="#" class="view-project">View Project</a>
+                </div>
+            </div>
+            
+            <div class="portfolio-item" data-category="bedroom luxury">
+                <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Serene Sanctuary">
+                <div class="portfolio-overlay">
+                    <h3>Serene Sanctuary</h3>
+                    <p>A tranquil bedroom retreat featuring luxurious textiles and a calming color palette to create a peaceful haven.</p>
+                </div>
+            </div>
+            
+            <div class="portfolio-item" data-category="kitchen">
+                <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Culinary Showcase">
+                <div class="portfolio-overlay">
+                    <h3>Culinary Showcase</h3>
+                    <p>This chef's kitchen combines functionality with high-end finishes, creating an inviting space for both cooking and entertaining.</p>
+                </div>
+            </div>
+            
+            <div class="portfolio-item" data-category="bedroom">
+                <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Elegant Repose">
+                <div class="portfolio-overlay">
+                    <h3>Elegant Repose</h3>
+                    <p>A master bedroom suite that exudes sophistication with its thoughtful design and curated furnishings.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="logo-kb">KB</span>
+                <span class="logo-staging">Staging</span>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="index.html#services">Services</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+                <a href="#"><i class="fab fa-houzz"></i></a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 KB Staging. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

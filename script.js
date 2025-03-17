@@ -85,27 +85,28 @@ contactForm.addEventListener('submit', async (e) => {
         message: document.getElementById('message').value
     };
 
-    // Create email content
-    const subject = `Personal Website Inquiry from ${formData.name}`;
-    const body = `Name: ${formData.name}
-Company: ${formData.company}
-Email: ${formData.email}
+    try {
+        const response = await fetch('http://localhost:5002/send-email', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData)
+        });
 
-Message:
-${formData.message}`;
+        const data = await response.json();
 
-    // Create mailto URL
-    const mailtoUrl = `mailto:yzhu415@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    
-    // Open email client
-    window.location.href = mailtoUrl;
-    
-    // Show success message and close modal
-    setTimeout(() => {
-        alert('Thank you for your interest! Opening your email client...');
-        contactForm.reset();
-        closeModal();
-    }, 100);
+        if (data.success) {
+            alert('Thank you for your message! I will get back to you soon.');
+            contactForm.reset();
+            closeModal();
+        } else {
+            throw new Error(data.message);
+        }
+    } catch (error) {
+        alert('Sorry, there was an error sending your message. Please try again or email me directly at yzhu415@gmail.com');
+        console.error('Error:', error);
+    }
 });
 
 // Add click handlers to language buttons

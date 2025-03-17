@@ -19,7 +19,7 @@ const translations = {
         about_text: "For the past decade, I have worked at some of the most recognized consumer and enterprise software companies where I've both launched new ideas generating $XXM+ in revenue and scaled existing programs globally from $XXXM to $XXXM. At work, I am often called to develop emerging opportunities or to help fix issues with no clear owner.",
         projects_title: "My Projects",
         project_codeium_title: "Personal Website",
-        project_codeium_desc: "Built a personal website in under 1 hour with no prior coding experience.",
+        project_codeium_desc: "Built a website for local home staging business in under 2 hours with no prior coding experience.",
         project_codeium_tech: "Technologies: Windsurf IDE, Cascade AI, GitHub",
         contact_title: "Connect With Me",
         footer_text: " 2025 Yifan Zhu. All rights reserved."
